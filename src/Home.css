@@ -1,0 +1,321 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        width: 100%;
+        height: 100vh;
+        background-color: #0496c5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .show-status {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .show-mode:nth-child(1) {
+        color: red;
+        font-weight: 600;
+    }
+    
+    .show-status .show-mode:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    
+    .show-status {
+        width: 900px;
+        height: 50px;
+        background-color: white;
+        border-radius: 4px;
+        padding: 1rem;
+    }
+    
+    .system-text,
+    .user-text {
+        width: 900px;
+        height: 240px;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    .user-text textarea {
+        border: none;
+        outline: none;
+        padding: 1rem;
+        word-spacing: 2px;
+        letter-spacing: 0.6px;
+        line-height: 1.5rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+    
+    h5 {
+        text-transform: uppercase;
+        color: white;
+    }
+    
+    .system-text {
+        padding: 1rem;
+        word-spacing: 4px;
+        letter-spacing: 0.6px;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    
+    .correct {
+        font-weight: bold;
+        color: green;
+    }
+    
+    .incorrect {
+        font-weight: bold;
+        color: red;
+    }
+    
+    .active {
+        font-weight: bold;
+    }
+    
+    .main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .inner-main {
+        width: 96%;
+        height: 92vh;
+        border-radius: 5px;
+        background-color: aliceblue;
+    }
+    
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav {
+        position: fixed;
+        min-width: 35%;
+        bottom: 2rem;
+        text-align: center;
+        background-color: #ef40ff;
+        padding: 1rem 0;
+        border-radius: 4px;
+    }
+    
+    .nav ul li {
+        display: inline;
+        padding: 0.5rem 1.1rem;
+        cursor: pointer;
+        color: white;
+    }
+    
+    .nav ul li:hover {
+        background-color: white;
+        border-radius: 4px;
+        color: black;
+    }
+    
+    .scroll-top {
+        position: fixed;
+        right: 2.5rem;
+        bottom: 2rem;
+        cursor: pointer;
+        transform: translateX(90px);
+        transition: all 0.3s;
+    }
+    
+    .scroll-icon {
+        width: 40px;
+        height: 40px;
+        background-color: #33ff00;
+        color: white;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+    }
+    /*HOME PAGE STYLE START*/
+    
+    .homepage,
+    .contactpage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        height: 100%;
+    }
+    
+    .content p:nth-child(1) {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    
+    .content p:nth-child(2) {
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #39ba70;
+        margin-top: 0.2rem;
+    }
+    
+    .content p:nth-child(3) {
+        margin-top: 0.8rem;
+    }
+    
+    .content button {
+        margin-top: 2rem;
+        outline: none;
+        border: none;
+        background-color: #3f1a7a;
+        border-radius: 4px;
+        padding: 0.7rem 2rem;
+        font-weight: bold;
+        color: white;
+    }
+    
+    img {
+        transform: rotate(45deg)
+    }
+    /*HOME PAGE STYLE END*/
+    /*ABOUT PAGE STYLE START*/
+    
+    .about {
+        width: 20rem;
+        height: 15rem;
+        text-align: center;
+        padding: 2rem 4px;
+    }
+    
+    .btn {
+        outline: none;
+        border: none;
+        padding: 0.6rem 0.9rem;
+        background-color: #39ba70;
+        font-size: 1.2rem;
+        border-radius: 7px;
+        color: white;
+    }
+    
+    .about p:nth-child(even) {
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    
+    .about p:nth-child(odd) {
+        font-size: 0.8rem;
+    }
+    
+    .about-main {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0 6rem;
+    }
+    
+    .about-topic {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        transform: translateY(100px);
+    }
+    /*ABOUT PAGE STYLE END*/
+    /*CONTACT PAGE STYLE START*/
+    
+    .message-input {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .message-input p {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    
+    input {
+        width: 350px;
+        height: 5.5vh;
+        border: none;
+        outline: none;
+        background-color: rgb(233, 233, 244);
+        border-radius: 20px;
+        padding: 0 1rem;
+    }
+    
+    textarea {
+        border: none;
+        outline: none;
+        padding: 1rem;
+        border-radius: 20px;
+        background-color: rgb(233, 233, 244);
+    }
+    
+    .message-input button {
+        border: none;
+        padding: 0.8rem;
+        background-color: #33ff00;
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    
+    .active {
+        visibility: visible;
+    }
+    
+    .deactive {
+        visibility: hidden;
+    }
+    
+    .message-icon {
+        transform: rotate(30deg);
+    }
+    /*CONTACT PAGE STYLE END*/
+    /*SERVICE PAGE STYLE START*/
+    
+    .services {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0 6rem;
+        justify-content: center;
+        align-items: center;
+    }
+    /*SERVICE PAGE STYLE START*/
+    
+    .blog-page {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        padding: 2rem;
+    }
+    
+    .blog-content:nth-child(1)>p:nth-child(1) {
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+    
+    .blog-content:nth-child(1)>p:nth-child(2) {
+        margin-top: 1.4rem;
+        font-size: 0.9rem;
+    }
